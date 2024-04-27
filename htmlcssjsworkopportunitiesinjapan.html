@@ -51,7 +51,7 @@
         .citySelection {
             position: absolute;
             top: 23px;
-            left: 1050px;
+            left: 1013px;
         }
 
         .citySelection select{
@@ -66,7 +66,7 @@
         .jobSearch{
             position: absolute;
             top: 23px;
-            left: 1097px;
+            left: 1060px;
         }
 
         .jobSearch input{
@@ -93,6 +93,60 @@
             padding-bottom: 30px;
         }
 
+        #jobListings{
+            background-color: rgba(234, 242, 234, 0.5);
+            position: absolute;
+            top: 646px;
+            left: 0;
+            width: 100%;
+        }
+
+        .jobList{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #jobListings .listing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+            padding: 0px 50px;
+        }
+
+        #jobListings .listing div {
+            display: grid;
+            background-color: #fff7e2;
+            color: #474747;
+            padding: 40px;
+            font-size: 13px;
+            font-weight: 300;
+            border-radius: 10px;
+            /*height: 250px;*/
+        }
+
+
+        #jobListings .listing div button {
+            border: 1px solid #3A643B;
+            border-radius: 3px;
+            color: whitesmoke;
+            background-color: #3A643B;
+            padding: 15px, 78px, 15px, 78px;
+            height: 30px;
+            margin-top: 20px;
+            margin-bottom: -13px;
+            width: 300px;
+            cursor: pointer;
+        }
+
+        .jobTitle{
+            color: black;
+            font-weight: bold;
+        }
+
+
+
     </style>
     <body>
         <div class="container">
@@ -100,7 +154,7 @@
                 <ul>
                     <li class="logo">Work Opportunities <br> in Japan</li>
                     <a href="#home"><li>Home</li></a>
-                    <li>Job listings</li>
+                    <a href="#jobListings"><li>Job listings</li></a>
                     <li>About</li>
                 </ul>
                 <div class="citySelection">
@@ -130,6 +184,35 @@
 
                 While Japan's job market is diverse and dynamic, individuals considering work opportunities should be mindful of language proficiency (Japanese skills are often beneficial), visa requirements, cultural adaptation, and understanding of Japanese work culture and etiquette to navigate successfully in the country's professional landscape.
             </p>
+           </div>
+           <div id="jobListings">
+                <h1 class="jobList">Job Listings</h1>
+                <div class="listing">
+                    <div>
+                        <h4>Actively Hiring</h4>
+                        <h1 class="jobTitle">Job Position</h1>
+                        <h2>Location</h2>
+                        <h4>Salary</h4>
+                        <button>View Details</button>
+                        <button>Apply Now</button>
+                    </div>
+                    <div>
+                        <h4>Actively Hiring</h4>
+                        <h1 class="jobTitle">Job Position</h1>
+                        <h2>Location</h2>
+                        <h4>Salary</h4>
+                        <button>View Details</button>
+                        <button>Apply Now</button>
+                    </div>
+                    <div>
+                        <h4>Actively Hiring</h4>
+                        <h1 class="jobTitle">Job Position</h1>
+                        <h2>Location</h2>
+                        <h4>Salary</h4>
+                        <button>View Details</button>
+                        <button>Apply Now</button>
+                    </div>
+                </div>
            </div>
         </div>
         <script>
