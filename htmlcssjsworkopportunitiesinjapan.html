@@ -22,6 +22,7 @@
             position: absolute;
             top: 0;
             right: 0;
+            left: 0;
         }
 
         .navBar ul{
@@ -29,15 +30,49 @@
             list-style-type: none;
             align-items: center;
             justify-content: space-between;
-            padding-right: 250px;
-            padding-left: 20px;
+            padding-right: 400px;
+            padding-left: 5px;
             padding-bottom: 3px;
             color: #474747;
+            margin-right: 50px;
         }
 
         .logo{
-            margin-right: 120px;
+            margin-left: 40px;
+            margin-right: -140px;
             color: #474747;
+        }
+
+        .citySelection {
+            position: absolute;
+            top: 23px;
+            left: 1050px;
+        }
+
+        .citySelection select{
+            width: 47px;
+            outline: none;
+            border-top: none;
+            border-bottom: none;
+            border-left: black;
+        }
+
+        .jobSearch{
+            position: absolute;
+            top: 23px;
+            left: 1097px;
+        }
+
+        .jobSearch input{
+            height: 18px;
+            width: 150px;
+            outline: none;
+            border: none;
+            padding-left: 6px;
+        }
+
+        .jobSearch input:focus{
+            
         }
 
     </style>
@@ -45,12 +80,25 @@
         <div class="container">
            <div class="navBar">
                 <ul>
-                    <li class="logo">Job Opportunities <br> in Japan</li>
+                    <li class="logo">Work Opportunities <br> in Japan</li>
                     <li>Home</li>
                     <li>Job listings</li>
                     <li>About</li>
                 </ul>
+                <div class="citySelection">
+                    <label for="city"></label>
+                    <select id="city" name="city">
+                        <option class="option" value="" disabled selected>City</option>
+                        <option class="option" value="1">Tokyo</option>
+                    </select>
+                </div>
+                <div class="jobSearch">
+                    <input class="job" type="text" placeholder="search job title">
+                </div>
            </div>
         </div>
+        <script>
+            
+        </script>
     </body>
 </html>
